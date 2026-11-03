@@ -1,601 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillLaunch Hub helps beginners learn digital skills, freelancing, business, personal finance and career development.">
+  <title>SkillLaunch Hub | Learn Skills, Build Your Future</title>
 
-<title>SkillLaunch Hub | Learn Skills. Build Your Future.</title>
-
-<meta name="description" content="Explore beginner-friendly guides on digital skills, freelancing, business, personal finance, career development and productivity.">
-
-<meta name="keywords" content="digital skills, freelancing, business, personal finance, career development, productivity">
-
-<meta name="author" content="SkillLaunch Hub">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f7faf8;
-    color: #26352d;
-    line-height: 1.7;
-}
-
-/* HEADER */
-
-header {
-    background: #103d30;
-    color: white;
-    padding: 20px 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.logo {
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.logo span {
-    color: #79d9a5;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-nav a:hover {
-    color: #79d9a5;
-}
-
-/* HERO */
-
-.hero {
-    background: linear-gradient(120deg, #103d30, #176348);
-    color: white;
-    text-align: center;
-    padding: 95px 7%;
-}
-
-.hero h1 {
-    font-size: clamp(35px, 6vw, 55px);
-    max-width: 850px;
-    margin: auto;
-    line-height: 1.2;
-}
-
-.hero p {
-    max-width: 680px;
-    margin: 22px auto;
-    font-size: 18px;
-    color: #d8eee2;
-}
-
-.btn {
-    display: inline-block;
-    background: #79d9a5;
-    color: #103d30;
-    padding: 13px 25px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.btn:hover {
-    background: white;
-}
-
-/* GENERAL SECTIONS */
-
-section {
-    padding: 65px 7%;
-}
-
-.section-title {
-    text-align: center;
-    color: #103d30;
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    text-align: center;
-    color: #68766e;
-    margin-bottom: 35px;
-}
-
-/* SEARCH */
-
-.search {
-    display: block;
-    width: 100%;
-    max-width: 520px;
-    margin: 0 auto 35px;
-    padding: 14px;
-    border: 1px solid #ccd9d0;
-    border-radius: 8px;
-    font-size: 16px;
-    outline-color: #176348;
-}
-
-/* CATEGORY CARDS */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    gap: 24px;
-}
-
-.card {
-    background: white;
-    padding: 27px;
-    border-radius: 12px;
-    border: 1px solid #e3ebe5;
-    box-shadow: 0 5px 18px rgba(16, 61, 48, 0.06);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.emoji {
-    font-size: 36px;
-}
-
-.card h3 {
-    color: #103d30;
-    margin: 12px 0;
-    font-size: 21px;
-}
-
-.card p {
-    color: #68766e;
-    font-size: 14px;
-}
-
-.card a {
-    display: inline-block;
-    color: #14764d;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 15px;
-}
-
-.card a:hover {
-    text-decoration: underline;
-}
-
-.coming {
-    display: inline-block;
-    color: #718078;
-    background: #edf3ef;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    margin-top: 15px;
-}
-
-/* FEATURED ARTICLE */
-
-.featured {
-    background: #eaf4ed;
-    text-align: center;
-}
-
-.featured-box {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    border: 1px solid #dce9df;
-}
-
-.featured-box h3 {
-    color: #103d30;
-    font-size: 23px;
-    margin-bottom: 12px;
-}
-
-.featured-box p {
-    color: #68766e;
-}
-
-.featured-box a {
-    display: inline-block;
-    margin-top: 18px;
-    color: white;
-    background: #176348;
-    padding: 11px 22px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* ABOUT */
-
-.about {
-    background: white;
-    text-align: center;
-}
-
-.about p {
-    max-width: 750px;
-    margin: 18px auto;
-    color: #68766e;
-}
-
-/* CONTACT */
-
-.contact {
-    text-align: center;
-    background: #eaf4ed;
-}
-
-.contact p {
-    color: #68766e;
-    margin-top: 12px;
-}
-
-/* FOOTER */
-
-footer {
-    background: #103d30;
-    color: #d8eee2;
-    text-align: center;
-    padding: 30px 7%;
-    font-size: 14px;
-}
-
-footer p {
-    margin: 7px 0;
-}
-
-footer a {
-    color: #79d9a5;
-    text-decoration: none;
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    header {
-        justify-content: center;
-        text-align: center;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    nav {
-        justify-content: center;
-        gap: 15px;
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7faf8;
+      color: #183b2b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123c2b;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #a8e6bd;
     }
 
     .hero {
-        padding: 65px 6%;
+      background: #174d36;
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background: white;
+      color: #174d36;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     section {
-        padding: 48px 6%;
+      padding: 60px 8%;
     }
 
-}
-</style>
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .search-box {
+      max-width: 500px;
+      margin: 0 auto 35px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #cbd8cf;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #e1eae3;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #174d36;
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      margin-bottom: 18px;
+      color: #52645a;
+    }
+
+    .card a {
+      color: #17643e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .featured {
+      background: #eaf3ed;
+      text-align: center;
+    }
+
+    .featured a {
+      color: #17643e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about p {
+      color: #52645a;
+      font-size: 17px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #eaf3ed;
+    }
+
+    footer {
+      background: #123c2b;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
-<header>
-
-    <div class="logo">
-        SkillLaunch <span>Hub</span>
-    </div>
+  <header>
+    <div class="logo">SkillLaunch Hub</div>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#topics">Topics</a>
-        <a href="#featured">Articles</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#topics">Topics</a>
+      <a href="#articles">Articles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-</header>
-
-<!-- HERO SECTION -->
-
-<main>
-
-<section class="hero" id="home">
-
+  <section class="hero" id="home">
     <h1>Learn Skills. Build Your Future.</h1>
-
     <p>
-        Discover practical guides to digital skills,
-        freelancing, business, personal finance and
-        career development. Start learning and take
-        your next step today.
+      Discover practical skills, explore online opportunities,
+      improve your career and take the next step towards success.
     </p>
+    <a href="#topics">Explore Topics</a>
+  </section>
 
-    <a href="#topics" class="btn">
-        Explore Learning Topics
-    </a>
+  <section id="topics">
+    <h2 class="section-title">Explore Our Topics</h2>
 
-</section>
-
-<!-- SIX TOPICS -->
-
-<section id="topics">
-
-    <h2 class="section-title">
-        Explore Our Topics
-    </h2>
-
-    <p class="subtitle">
-        Practical knowledge to help you learn and grow.
-    </p>
-
-    <input
-        type="search"
-        id="search"
-        class="search"
-        placeholder="Search learning topics..."
-        aria-label="Search learning topics"
-    >
-
-    <div class="grid" id="cards">
-
-        <!-- DIGITAL SKILLS -->
-
-        <article class="card">
-
-            <div class="emoji">??</div>
-
-            <h3>Digital Skills</h3>
-
-            <p>
-                Explore graphic design, web development,
-                digital marketing, video editing and
-                useful online skills.
-            </p>
-
-            <a href="digital-skills.html">
-                Read Digital Skills Guide ?
-            </a>
-
-        </article>
-
-        <!-- FREELANCING -->
-
-        <article class="card">
-
-            <div class="emoji">??</div>
-
-            <h3>Freelancing</h3>
-
-            <p>
-                Learn how freelancing works, build a
-                portfolio, find clients and explore
-                online work opportunities.
-            </p>
-
-            <span class="coming">More guides coming soon</span>
-
-        </article>
-
-        <!-- BUSINESS -->
-
-        <article class="card">
-
-            <div class="emoji">??</div>
-
-            <h3>Business & Entrepreneurship</h3>
-
-            <p>
-                Discover business ideas, startup stories,
-                marketing strategies and ecommerce basics.
-            </p>
-
-            <span class="coming">More guides coming soon</span>
-
-        </article>
-
-        <!-- FINANCE -->
-
-        <article class="card">
-
-            <div class="emoji">??</div>
-
-            <h3>Personal Finance</h3>
-
-            <p>
-                Understand budgeting, saving, investing
-                basics and responsible money management.
-            </p>
-
-            <span class="coming">More guides coming soon</span>
-
-        </article>
-
-        <!-- CAREER -->
-
-        <article class="card">
-
-            <div class="emoji">??</div>
-
-            <h3>Career Development</h3>
-
-            <p>
-                Improve your CV, prepare for interviews,
-                explore job opportunities and plan your career.
-            </p>
-
-            <span class="coming">More guides coming soon</span>
-
-        </article>
-
-        <!-- PRODUCTIVITY -->
-
-        <article class="card">
-
-            <div class="emoji">?</div>
-
-            <h3>Productivity & Self-Improvement</h3>
-
-            <p>
-                Build better habits, manage your time,
-                improve focus and develop yourself.
-            </p>
-
-            <span class="coming">More guides coming soon</span>
-
-        </article>
-
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search topics..."
+        onkeyup="searchTopics()"
+      >
     </div>
 
-</section>
+    <div class="categories">
 
-<!-- FEATURED ARTICLE -->
-
-<section class="featured" id="featured">
-
-    <h2 class="section-title">
-        Latest Learning Guide
-    </h2>
-
-    <p class="subtitle">
-        Start learning with our beginner-friendly articles.
-    </p>
-
-    <div class="featured-box">
-
-        <h3>
-            10 Essential Digital Skills to Learn in 2026
-        </h3>
-
+      <div class="card">
+        <h3>Digital Skills</h3>
         <p>
-            Discover ten useful digital skills,
-            beginner tools and a simple 30-day
-            learning roadmap.
+          Explore graphic design, web development, digital marketing,
+          video editing and useful online skills.
         </p>
+        <a href="digital-skills.html">Read Digital Skills Guide</a>
+      </div>
 
-        <a href="digital-skills.html">
-            Read Full Article ?
-        </a>
+      <div class="card">
+        <h3>Freelancing</h3>
+        <p>
+          Learn how freelancing works, build a portfolio,
+          find clients and explore online work opportunities.
+        </p>
+        <a href="freelancing.html">Freelancing Guide Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Business &amp; Entrepreneurship</h3>
+        <p>
+          Discover business ideas, startup stories,
+          marketing strategies and ecommerce basics.
+        </p>
+        <a href="#articles">More guides coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Personal Finance</h3>
+        <p>
+          Understand budgeting, saving, investing basics
+          and responsible money management.
+        </p>
+        <a href="#articles">More guides coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Career Development</h3>
+        <p>
+          Improve your CV, prepare for interviews,
+          explore job opportunities and plan your career.
+        </p>
+        <a href="#articles">More guides coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Productivity &amp; Self-Improvement</h3>
+        <p>
+          Build better habits, manage your time,
+          improve focus and develop yourself.
+        </p>
+        <a href="#articles">More guides coming soon</a>
+      </div>
 
     </div>
+  </section>
 
-</section>
+  <section class="featured" id="articles">
+    <h2 class="section-title">Featured Article</h2>
+    <h3>10 Essential Digital Skills to Learn in 2026</h3>
+    <p>Discover useful digital skills and how to start learning them.</p>
+    <br>
+    <a href="digital-skills.html">Read the Full Article</a>
+  </section>
 
-<!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <h2 class="section-title">About SkillLaunch Hub</h2>
+      <p>
+        SkillLaunch Hub is a learning platform designed to help
+        beginners develop useful skills, explore career opportunities
+        and understand the world of online work and business.
+        Our goal is to make learning simple and accessible to everyone.
+      </p>
+    </div>
+  </section>
 
-<section class="about" id="about">
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Have a question or suggestion? We would love to hear from you.</p>
+    <p>Contact information coming soon.</p>
+  </section>
 
-    <h2 class="section-title">
-        About SkillLaunch Hub
-    </h2>
+  <footer>
+    <p>Copyright &copy; 2026 SkillLaunch Hub. All Rights Reserved.</p>
+  </footer>
 
-    <p>
-        Our mission is to make practical learning
-        easier for everyone. We share beginner-friendly
-        educational guides and resources to help people
-        develop skills, explore opportunities and build
-        a better future.
-    </p>
+  <script>
+    function searchTopics() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let cards = document.querySelectorAll(".card");
 
-</section>
+      cards.forEach(function(card) {
+        let content = card.innerText.toLowerCase();
 
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-    <h2 class="section-title">
-        Contact Us
-    </h2>
-
-    <p>
-        Have a question, suggestion or idea for a new guide?
-    </p>
-
-    <p>
-        We would love to hear from you.
-    </p>
-
-    <p>
-        Contact information will be added here soon.
-    </p>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-
-    <p>
-        <strong>SkillLaunch Hub</strong>
-        — Learn Today. Grow Tomorrow.
-    </p>
-
-    <p>
-        Educational content is provided for general
-        information and learning purposes.
-    </p>
-
-    <p>
-        © 2026 SkillLaunch Hub. All rights reserved.
-    </p>
-
-</footer>
-
-<!-- SEARCH FUNCTION -->
-
-<script>
-
-const search = document.getElementById("search");
-
-const cards = document.querySelectorAll(".card");
-
-search.addEventListener("input", function () {
-
-    const term = this.value.toLowerCase();
-
-    cards.forEach(function(card) {
-
-        const content = card.innerText.toLowerCase();
-
-        card.style.display = content.includes(term)
-            ? "block"
-            : "none";
-
-    });
-
-});
-
-</script>
+        if (content.includes(input)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
