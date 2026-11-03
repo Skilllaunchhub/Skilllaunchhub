@@ -3,127 +3,598 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkillLaunch Hub | Build Your Future</title>
-<meta name="description" content="Learn digital skills, freelancing, business and career development with practical beginner-friendly guides.">
+
+<title>SkillLaunch Hub | Learn Skills. Build Your Future.</title>
+
+<meta name="description" content="Explore beginner-friendly guides on digital skills, freelancing, business, personal finance, career development and productivity.">
+
+<meta name="keywords" content="digital skills, freelancing, business, personal finance, career development, productivity">
+
+<meta name="author" content="SkillLaunch Hub">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;color:#1d2939;background:#f7faf8;line-height:1.6}
-header{background:#103d30;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-.logo{font-size:25px;font-weight:bold}
-.logo span{color:#75d6a5}
-nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
-.hero{padding:85px 7%;background:linear-gradient(120deg,#103d30,#176348);color:white;text-align:center}
-.hero h1{font-size:clamp(34px,6vw,56px);line-height:1.15;max-width:800px;margin:auto}
-.hero p{max-width:650px;margin:20px auto;color:#d8eee2;font-size:17px}
-.btn{display:inline-block;background:#79d9a5;color:#103d30;padding:13px 25px;border-radius:7px;text-decoration:none;font-weight:bold;margin-top:15px}
-section{padding:60px 7%}
-.section-title{text-align:center;font-size:30px;color:#103d30;margin-bottom:10px}
-.subtitle{text-align:center;color:#68766e;margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-.card{background:white;padding:25px;border-radius:12px;border:1px solid #e3ebe5;box-shadow:0 5px 18px #103d3010}
-.card .emoji{font-size:32px}
-.card h3{color:#103d30;margin:12px 0}
-.card p{color:#66736c;font-size:14px}
-.card a{display:inline-block;color:#14764d;font-weight:bold;text-decoration:none;margin-top:15px}
-.search{display:block;width:min(100%,500px);margin:0 auto 30px;padding:14px;border:1px solid #ccd9d0;border-radius:8px;font-size:16px}
-.about{background:#eaf4ed;text-align:center}
-.about p{max-width:720px;margin:15px auto;color:#52645a}
-footer{background:#103d30;color:#d8eee2;text-align:center;padding:30px 7%;font-size:13px}
-footer a{color:#79d9a5}
-@media(max-width:600px){header{justify-content:center}nav a{margin:0 8px}.hero{padding:65px 6%}section{padding:45px 6%}}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7faf8;
+    color: #26352d;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: #103d30;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #79d9a5;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #79d9a5;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(120deg, #103d30, #176348);
+    color: white;
+    text-align: center;
+    padding: 95px 7%;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 55px);
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 22px auto;
+    font-size: 18px;
+    color: #d8eee2;
+}
+
+.btn {
+    display: inline-block;
+    background: #79d9a5;
+    color: #103d30;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 65px 7%;
+}
+
+.section-title {
+    text-align: center;
+    color: #103d30;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #68766e;
+    margin-bottom: 35px;
+}
+
+/* SEARCH */
+
+.search {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 35px;
+    padding: 14px;
+    border: 1px solid #ccd9d0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline-color: #176348;
+}
+
+/* CATEGORY CARDS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    border: 1px solid #e3ebe5;
+    box-shadow: 0 5px 18px rgba(16, 61, 48, 0.06);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.emoji {
+    font-size: 36px;
+}
+
+.card h3 {
+    color: #103d30;
+    margin: 12px 0;
+    font-size: 21px;
+}
+
+.card p {
+    color: #68766e;
+    font-size: 14px;
+}
+
+.card a {
+    display: inline-block;
+    color: #14764d;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.coming {
+    display: inline-block;
+    color: #718078;
+    background: #edf3ef;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* FEATURED ARTICLE */
+
+.featured {
+    background: #eaf4ed;
+    text-align: center;
+}
+
+.featured-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #dce9df;
+}
+
+.featured-box h3 {
+    color: #103d30;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.featured-box p {
+    color: #68766e;
+}
+
+.featured-box a {
+    display: inline-block;
+    margin-top: 18px;
+    color: white;
+    background: #176348;
+    padding: 11px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 18px auto;
+    color: #68766e;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    background: #eaf4ed;
+}
+
+.contact p {
+    color: #68766e;
+    margin-top: 12px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #103d30;
+    color: #d8eee2;
+    text-align: center;
+    padding: 30px 7%;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 7px 0;
+}
+
+footer a {
+    color: #79d9a5;
+    text-decoration: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    section {
+        padding: 48px 6%;
+    }
+
+}
 </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <div class="logo">SkillLaunch <span>Hub</span></div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#topics">Topics</a>
-    <a href="#about">About</a>
-  </nav>
+
+    <div class="logo">
+        SkillLaunch <span>Hub</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#topics">Topics</a>
+        <a href="#featured">Articles</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
 </header>
 
+<!-- HERO SECTION -->
+
 <main>
+
 <section class="hero" id="home">
-  <h1>Learn Skills. Build Your Future.</h1>
-  <p>Discover practical guides to digital skills, freelancing, business and career growth. Start learning and take your next step today.</p>
-  <a class="btn" href="#topics">Explore Learning Topics</a>
+
+    <h1>Learn Skills. Build Your Future.</h1>
+
+    <p>
+        Discover practical guides to digital skills,
+        freelancing, business, personal finance and
+        career development. Start learning and take
+        your next step today.
+    </p>
+
+    <a href="#topics" class="btn">
+        Explore Learning Topics
+    </a>
+
 </section>
+
+<!-- SIX TOPICS -->
 
 <section id="topics">
-  <h2 class="section-title">Explore Our Topics</h2>
-  <p class="subtitle">Practical knowledge to help you grow.</p>
-  <input class="search" id="search" type="search" placeholder="Search learning topics...">
 
-  <div class="grid" id="cards">
-    <article class="card">
-      <div class="emoji">??</div>
-      <h3>Digital Skills</h3>
-      <p>Explore graphic design, web development, digital marketing and other useful online skills.</p>
-      <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">Explore free lessons ?</a>
-    </article>
+    <h2 class="section-title">
+        Explore Our Topics
+    </h2>
 
-    <article class="card">
-      <div class="emoji">??</div>
-      <h3>Freelancing</h3>
-      <p>Learn how freelancing works, build a portfolio and discover ways to find clients.</p>
-      <a href="https://www.upwork.com/resources" target="_blank" rel="noopener">Explore freelancing resources ?</a>
-    </article>
+    <p class="subtitle">
+        Practical knowledge to help you learn and grow.
+    </p>
 
-    <article class="card">
-      <div class="emoji">??</div>
-      <h3>Business & Entrepreneurship</h3>
-      <p>Discover business ideas, marketing basics, ecommerce and startup knowledge.</p>
-      <a href="https://www.sba.gov/business-guide" target="_blank" rel="noopener">Explore business guides ?</a>
-    </article>
+    <input
+        type="search"
+        id="search"
+        class="search"
+        placeholder="Search learning topics..."
+        aria-label="Search learning topics"
+    >
 
-    <article class="card">
-      <div class="emoji">??</div>
-      <h3>Personal Finance</h3>
-      <p>Understand budgeting, saving, financial planning and responsible money habits.</p>
-      <a href="https://www.consumerfinance.gov/consumer-tools/" target="_blank" rel="noopener">Explore finance resources ?</a>
-    </article>
+    <div class="grid" id="cards">
 
-    <article class="card">
-      <div class="emoji">??</div>
-      <h3>Career Development</h3>
-      <p>Improve your CV, prepare for interviews and learn how to plan your career.</p>
-      <a href="https://www.careeronestop.org/" target="_blank" rel="noopener">Explore career resources ?</a>
-    </article>
+        <!-- DIGITAL SKILLS -->
 
-    <article class="card">
-      <div class="emoji">?</div>
-      <h3>Productivity & Growth</h3>
-      <p>Build better habits, manage your time and develop a growth mindset.</p>
-      <a href="https://www.coursera.org/" target="_blank" rel="noopener">Explore learning resources ?</a>
-    </article>
-  </div>
+        <article class="card">
+
+            <div class="emoji">??</div>
+
+            <h3>Digital Skills</h3>
+
+            <p>
+                Explore graphic design, web development,
+                digital marketing, video editing and
+                useful online skills.
+            </p>
+
+            <a href="digital-skills.html">
+                Read Digital Skills Guide ?
+            </a>
+
+        </article>
+
+        <!-- FREELANCING -->
+
+        <article class="card">
+
+            <div class="emoji">??</div>
+
+            <h3>Freelancing</h3>
+
+            <p>
+                Learn how freelancing works, build a
+                portfolio, find clients and explore
+                online work opportunities.
+            </p>
+
+            <span class="coming">More guides coming soon</span>
+
+        </article>
+
+        <!-- BUSINESS -->
+
+        <article class="card">
+
+            <div class="emoji">??</div>
+
+            <h3>Business & Entrepreneurship</h3>
+
+            <p>
+                Discover business ideas, startup stories,
+                marketing strategies and ecommerce basics.
+            </p>
+
+            <span class="coming">More guides coming soon</span>
+
+        </article>
+
+        <!-- FINANCE -->
+
+        <article class="card">
+
+            <div class="emoji">??</div>
+
+            <h3>Personal Finance</h3>
+
+            <p>
+                Understand budgeting, saving, investing
+                basics and responsible money management.
+            </p>
+
+            <span class="coming">More guides coming soon</span>
+
+        </article>
+
+        <!-- CAREER -->
+
+        <article class="card">
+
+            <div class="emoji">??</div>
+
+            <h3>Career Development</h3>
+
+            <p>
+                Improve your CV, prepare for interviews,
+                explore job opportunities and plan your career.
+            </p>
+
+            <span class="coming">More guides coming soon</span>
+
+        </article>
+
+        <!-- PRODUCTIVITY -->
+
+        <article class="card">
+
+            <div class="emoji">?</div>
+
+            <h3>Productivity & Self-Improvement</h3>
+
+            <p>
+                Build better habits, manage your time,
+                improve focus and develop yourself.
+            </p>
+
+            <span class="coming">More guides coming soon</span>
+
+        </article>
+
+    </div>
+
 </section>
+
+<!-- FEATURED ARTICLE -->
+
+<section class="featured" id="featured">
+
+    <h2 class="section-title">
+        Latest Learning Guide
+    </h2>
+
+    <p class="subtitle">
+        Start learning with our beginner-friendly articles.
+    </p>
+
+    <div class="featured-box">
+
+        <h3>
+            10 Essential Digital Skills to Learn in 2026
+        </h3>
+
+        <p>
+            Discover ten useful digital skills,
+            beginner tools and a simple 30-day
+            learning roadmap.
+        </p>
+
+        <a href="digital-skills.html">
+            Read Full Article ?
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
-  <h2 class="section-title">About SkillLaunch Hub</h2>
-  <p>Our mission is to make practical learning easier for everyone. We share beginner-friendly educational resources to help people develop skills, explore opportunities and build a better future.</p>
+
+    <h2 class="section-title">
+        About SkillLaunch Hub
+    </h2>
+
+    <p>
+        Our mission is to make practical learning
+        easier for everyone. We share beginner-friendly
+        educational guides and resources to help people
+        develop skills, explore opportunities and build
+        a better future.
+    </p>
+
 </section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">
+        Contact Us
+    </h2>
+
+    <p>
+        Have a question, suggestion or idea for a new guide?
+    </p>
+
+    <p>
+        We would love to hear from you.
+    </p>
+
+    <p>
+        Contact information will be added here soon.
+    </p>
+
+</section>
+
 </main>
 
+<!-- FOOTER -->
+
 <footer>
-  <p><strong>SkillLaunch Hub</strong> — Learn Today. Grow Tomorrow.</p>
-  <p style="margin-top:10px">Educational resources are provided for general information. External websites have their own terms and policies.</p>
-  <p style="margin-top:10px">© 2026 SkillLaunch Hub. All rights reserved.</p>
+
+    <p>
+        <strong>SkillLaunch Hub</strong>
+        — Learn Today. Grow Tomorrow.
+    </p>
+
+    <p>
+        Educational content is provided for general
+        information and learning purposes.
+    </p>
+
+    <p>
+        © 2026 SkillLaunch Hub. All rights reserved.
+    </p>
+
 </footer>
 
+<!-- SEARCH FUNCTION -->
+
 <script>
+
 const search = document.getElementById("search");
+
 const cards = document.querySelectorAll(".card");
 
 search.addEventListener("input", function () {
-  const term = this.value.toLowerCase();
-  cards.forEach(card => {
-    card.style.display = card.innerText.toLowerCase().includes(term)
-      ? "block" : "none";
-  });
+
+    const term = this.value.toLowerCase();
+
+    cards.forEach(function(card) {
+
+        const content = card.innerText.toLowerCase();
+
+        card.style.display = content.includes(term)
+            ? "block"
+            : "none";
+
+    });
+
 });
+
 </script>
 
 </body>
