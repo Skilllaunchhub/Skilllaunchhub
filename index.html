@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillLaunch Hub | Build Your Future</title>
+<meta name="description" content="Learn digital skills, freelancing, business and career development with practical beginner-friendly guides.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#1d2939;background:#f7faf8;line-height:1.6}
+header{background:#103d30;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:25px;font-weight:bold}
+.logo span{color:#75d6a5}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{padding:85px 7%;background:linear-gradient(120deg,#103d30,#176348);color:white;text-align:center}
+.hero h1{font-size:clamp(34px,6vw,56px);line-height:1.15;max-width:800px;margin:auto}
+.hero p{max-width:650px;margin:20px auto;color:#d8eee2;font-size:17px}
+.btn{display:inline-block;background:#79d9a5;color:#103d30;padding:13px 25px;border-radius:7px;text-decoration:none;font-weight:bold;margin-top:15px}
+section{padding:60px 7%}
+.section-title{text-align:center;font-size:30px;color:#103d30;margin-bottom:10px}
+.subtitle{text-align:center;color:#68766e;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:white;padding:25px;border-radius:12px;border:1px solid #e3ebe5;box-shadow:0 5px 18px #103d3010}
+.card .emoji{font-size:32px}
+.card h3{color:#103d30;margin:12px 0}
+.card p{color:#66736c;font-size:14px}
+.card a{display:inline-block;color:#14764d;font-weight:bold;text-decoration:none;margin-top:15px}
+.search{display:block;width:min(100%,500px);margin:0 auto 30px;padding:14px;border:1px solid #ccd9d0;border-radius:8px;font-size:16px}
+.about{background:#eaf4ed;text-align:center}
+.about p{max-width:720px;margin:15px auto;color:#52645a}
+footer{background:#103d30;color:#d8eee2;text-align:center;padding:30px 7%;font-size:13px}
+footer a{color:#79d9a5}
+@media(max-width:600px){header{justify-content:center}nav a{margin:0 8px}.hero{padding:65px 6%}section{padding:45px 6%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SkillLaunch <span>Hub</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#topics">Topics</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <h1>Learn Skills. Build Your Future.</h1>
+  <p>Discover practical guides to digital skills, freelancing, business and career growth. Start learning and take your next step today.</p>
+  <a class="btn" href="#topics">Explore Learning Topics</a>
+</section>
+
+<section id="topics">
+  <h2 class="section-title">Explore Our Topics</h2>
+  <p class="subtitle">Practical knowledge to help you grow.</p>
+  <input class="search" id="search" type="search" placeholder="Search learning topics...">
+
+  <div class="grid" id="cards">
+    <article class="card">
+      <div class="emoji">??</div>
+      <h3>Digital Skills</h3>
+      <p>Explore graphic design, web development, digital marketing and other useful online skills.</p>
+      <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">Explore free lessons ?</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">??</div>
+      <h3>Freelancing</h3>
+      <p>Learn how freelancing works, build a portfolio and discover ways to find clients.</p>
+      <a href="https://www.upwork.com/resources" target="_blank" rel="noopener">Explore freelancing resources ?</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">??</div>
+      <h3>Business & Entrepreneurship</h3>
+      <p>Discover business ideas, marketing basics, ecommerce and startup knowledge.</p>
+      <a href="https://www.sba.gov/business-guide" target="_blank" rel="noopener">Explore business guides ?</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">??</div>
+      <h3>Personal Finance</h3>
+      <p>Understand budgeting, saving, financial planning and responsible money habits.</p>
+      <a href="https://www.consumerfinance.gov/consumer-tools/" target="_blank" rel="noopener">Explore finance resources ?</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">??</div>
+      <h3>Career Development</h3>
+      <p>Improve your CV, prepare for interviews and learn how to plan your career.</p>
+      <a href="https://www.careeronestop.org/" target="_blank" rel="noopener">Explore career resources ?</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">?</div>
+      <h3>Productivity & Growth</h3>
+      <p>Build better habits, manage your time and develop a growth mindset.</p>
+      <a href="https://www.coursera.org/" target="_blank" rel="noopener">Explore learning resources ?</a>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About SkillLaunch Hub</h2>
+  <p>Our mission is to make practical learning easier for everyone. We share beginner-friendly educational resources to help people develop skills, explore opportunities and build a better future.</p>
+</section>
+</main>
+
+<footer>
+  <p><strong>SkillLaunch Hub</strong> — Learn Today. Grow Tomorrow.</p>
+  <p style="margin-top:10px">Educational resources are provided for general information. External websites have their own terms and policies.</p>
+  <p style="margin-top:10px">© 2026 SkillLaunch Hub. All rights reserved.</p>
+</footer>
+
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+
+search.addEventListener("input", function () {
+  const term = this.value.toLowerCase();
+  cards.forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(term)
+      ? "block" : "none";
+  });
+});
+</script>
+
+</body>
+</html>
