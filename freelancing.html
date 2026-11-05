@@ -1,159 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete beginner guide to freelancing. Learn freelance skills, build a portfolio, find clients and start your online career.">
+    <meta name="robots" content="index, follow">
 
-<meta name="description" content="Learn how to start freelancing as a beginner, choose skills, build a portfolio, find clients and grow your online career.">
+    <title>Freelancing for Beginners | SkillLaunch Hub</title>
 
-<title>Freelancing for Beginners | SkillLaunch Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f7faf8;
-    color: #183b2b;
-    line-height: 1.8;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7faf8;
+            color: #183b2b;
+            line-height: 1.8;
+        }
 
-header {
-    background: #123c2b;
-    color: white;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
+        header {
+            background: #123c2b;
+            color: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-.logo {
-    font-size: 23px;
-    font-weight: bold;
-}
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-header a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-}
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-.hero {
-    background: #174d36;
-    color: white;
-    text-align: center;
-    padding: 65px 20px;
-}
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
 
-.hero h1 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
+        nav a:hover {
+            color: #a8e6bd;
+        }
 
-.hero p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 17px;
-}
+        .hero {
+            background: #174d36;
+            color: #ffffff;
+            text-align: center;
+            padding: 75px 20px;
+        }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
 
-.article {
-    background: white;
-    padding: 35px;
-    border-radius: 10px;
-    border: 1px solid #e1eae3;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-}
+        .hero p {
+            max-width: 720px;
+            margin: auto;
+            font-size: 17px;
+        }
 
-h2 {
-    color: #174d36;
-    margin: 30px 0 12px;
-    font-size: 25px;
-}
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-h3 {
-    color: #17643e;
-    margin: 20px 0 8px;
-}
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #17643e;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-p {
-    margin-bottom: 15px;
-}
+        .article {
+            background: #ffffff;
+            padding: 35px;
+            border: 1px solid #e1eae3;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
 
-ul, ol {
-    padding-left: 25px;
-    margin-bottom: 20px;
-}
+        .article h2 {
+            color: #174d36;
+            font-size: 25px;
+            margin: 32px 0 12px;
+        }
 
-li {
-    margin-bottom: 8px;
-}
+        .article h3 {
+            color: #17643e;
+            font-size: 19px;
+            margin: 20px 0 8px;
+        }
 
-.highlight {
-    background: #eaf3ed;
-    border-left: 4px solid #17643e;
-    padding: 18px;
-    margin: 22px 0;
-    border-radius: 5px;
-}
+        .article p {
+            margin-bottom: 16px;
+        }
 
-a {
-    color: #17643e;
-}
+        .article ul,
+        .article ol {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
 
-.back {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
+        .article li {
+            margin-bottom: 9px;
+        }
 
-footer {
-    background: #123c2b;
-    color: white;
-    text-align: center;
-    padding: 22px;
-    margin-top: 50px;
-}
+        .article a {
+            color: #17643e;
+            font-weight: bold;
+        }
 
-footer a {
-    color: #a8e6bd;
-}
+        .highlight {
+            background: #eaf3ed;
+            border-left: 4px solid #17643e;
+            padding: 20px;
+            margin: 22px 0;
+            border-radius: 6px;
+        }
 
-@media(max-width:600px) {
-    header {
-        flex-direction: column;
-    }
+        .step {
+            padding: 18px;
+            background: #f7faf8;
+            border: 1px solid #e1eae3;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
 
-    .hero h1 {
-        font-size: 29px;
-    }
+        footer {
+            background: #123c2b;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 50px;
+        }
 
-    .article {
-        padding: 20px;
-    }
-}
-</style>
+        footer a {
+            color: #a8e6bd;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .article {
+                padding: 20px;
+            }
+
+            .article h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <div class="logo">SkillLaunch Hub</div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="digital-skills.html">Digital Skills</a>
+        <a href="freelancing.html">Freelancing</a>
     </nav>
 </header>
 
@@ -161,215 +199,300 @@ footer a {
     <h1>Freelancing for Beginners</h1>
     <p>
         Learn how freelancing works, develop valuable skills,
-        find clients and start building your online career.
+        build a portfolio and find opportunities to work online.
     </p>
 </section>
 
-<div class="container">
+<main class="container">
 
-<a href="index.html" class="back">? Back to Home</a>
+    <a class="back-link" href="index.html">Back to Homepage</a>
 
-<article class="article">
+    <article class="article">
 
-<p>
-Freelancing has become an interesting career option for people
-who want to work independently and offer their services online.
-Instead of working for only one employer, freelancers provide
-services to different clients and businesses.
-</p>
+        <p>
+            Freelancing is a way of working independently by
+            providing services to clients and businesses.
+            Instead of working for only one employer, freelancers
+            can work with different clients on individual projects.
+        </p>
 
-<p>
-If you are a beginner, you do not necessarily need a university
-degree to start learning freelance skills. You need patience,
-practice, dedication and a willingness to improve.
-</p>
+        <p>
+            Freelancing can offer flexibility and opportunities
+            to work with people from different countries.
+            However, building a successful freelance career
+            requires learning, practice and patience.
+        </p>
 
-<h2>1. What Is Freelancing?</h2>
+        <div class="highlight">
+            <strong>Beginner Tip:</strong>
+            You do not need to learn every skill at once.
+            Choose one useful skill, practise regularly and
+            build your experience step by step.
+        </div>
 
-<p>
-Freelancing means working independently and providing services
-to clients in exchange for payment. Freelancers usually work
-on specific projects or agreed tasks.
-</p>
+        <h2>1. What Is Freelancing</h2>
 
-<p>
-For example, a business might hire a freelancer to design its
-logo, write website content, edit videos or manage social media.
-</p>
+        <p>
+            Freelancing means offering professional services
+            independently in exchange for payment.
+            A client hires a freelancer to complete a specific
+            task or project.
+        </p>
 
-<div class="highlight">
-<strong>Example:</strong> A small business needs a professional
-logo. It hires a freelance graphic designer to create one.
-The designer completes the project and receives payment.
-</div>
+        <p>
+            For example, a company might hire a video editor
+            to edit promotional videos or a designer to create
+            graphics for its social media pages.
+        </p>
 
-<h2>2. Best Freelancing Skills for Beginners</h2>
+        <h2>2. Popular Freelancing Skills</h2>
 
-<p>
-Choosing the right skill is one of the most important steps.
-Start with something you enjoy and can practise regularly.
-</p>
+        <h3>Graphic Design</h3>
+        <p>
+            Graphic designers create logos, advertisements,
+            banners, presentations and social media graphics.
+            Beginners can start by learning basic design principles
+            and practising with design tools.
+        </p>
 
-<h3>Graphic Design</h3>
-<p>
-Learn to create logos, social media posts, banners and
-marketing materials using design software.
-</p>
+        <h3>Content Writing</h3>
+        <p>
+            Content writers prepare blog posts, website articles,
+            product descriptions and marketing content.
+            Good writing, research and communication are important.
+        </p>
 
-<h3>Content Writing</h3>
-<p>
-Write blog articles, website content, product descriptions
-and other written material for businesses.
-</p>
+        <h3>Video Editing</h3>
+        <p>
+            Video editors create and edit videos for businesses,
+            content creators, advertisements and social media.
+            Learn cutting, transitions, sound and storytelling.
+        </p>
 
-<h3>Video Editing</h3>
-<p>
-Edit short videos, social media content, advertisements
-and YouTube videos.
-</p>
+        <h3>Web Development</h3>
+        <p>
+            Web developers create and maintain websites.
+            HTML, CSS and JavaScript are useful starting points
+            for beginners interested in building websites.
+        </p>
 
-<h3>Web Development</h3>
-<p>
-Learn how to build websites using HTML, CSS and JavaScript.
-You can begin with simple websites and gradually improve.
-</p>
+        <h3>Digital Marketing</h3>
+        <p>
+            Digital marketers help businesses reach customers
+            through search engines, social media, email and
+            online advertising.
+        </p>
 
-<h3>Digital Marketing</h3>
-<p>
-Learn social media marketing, search engine optimization,
-email marketing and online advertising basics.
-</p>
+        <h3>Virtual Assistance</h3>
+        <p>
+            Virtual assistants support businesses with scheduling,
+            research, data organization, email management and
+            administrative tasks.
+        </p>
 
-<h2>3. How to Start Freelancing Step by Step</h2>
+        <h2>3. How to Start Freelancing</h2>
 
-<h3>Step 1: Choose One Skill</h3>
-<p>
-Avoid trying to learn everything at once. Select one skill
-and focus on developing it before offering services.
-</p>
+        <div class="step">
+            <h3>Step 1: Choose One Skill</h3>
+            <p>
+                Select a skill that interests you and has
+                practical applications. Research what clients
+                need before choosing your learning path.
+            </p>
+        </div>
 
-<h3>Step 2: Learn and Practise</h3>
-<p>
-Use free tutorials, online lessons and practical exercises.
-Create sample projects to improve your abilities.
-</p>
+        <div class="step">
+            <h3>Step 2: Learn the Fundamentals</h3>
+            <p>
+                Use free educational resources and tutorials.
+                Practise regularly and complete small exercises
+                to improve your knowledge.
+            </p>
+        </div>
 
-<h3>Step 3: Build a Portfolio</h3>
-<p>
-A portfolio is a collection of examples showing what you can do.
-Create a few quality sample projects, even if you have not
-worked with a paying client yet.
-</p>
+        <div class="step">
+            <h3>Step 3: Create Sample Projects</h3>
+            <p>
+                Build practice projects that demonstrate
+                your abilities. Make sure your portfolio
+                contains original work.
+            </p>
+        </div>
 
-<h3>Step 4: Create Your Freelancer Profile</h3>
-<p>
-Write a clear description of your skills, services and
-experience. Use genuine information and professional samples.
-</p>
+        <div class="step">
+            <h3>Step 4: Build a Portfolio</h3>
+            <p>
+                A portfolio shows potential clients what you
+                can do. Include your best examples and explain
+                the services you offer.
+            </p>
+        </div>
 
-<h3>Step 5: Find Potential Clients</h3>
-<p>
-Look for projects that match your skills. Read the requirements
-carefully and write personalised proposals explaining how
-you can help.
-</p>
+        <div class="step">
+            <h3>Step 5: Prepare Your Profile</h3>
+            <p>
+                Write a professional introduction explaining
+                your skills, services and experience.
+                Use accurate information.
+            </p>
+        </div>
 
-<h3>Step 6: Deliver Quality Work</h3>
-<p>
-Communicate clearly, follow project instructions and meet
-agreed deadlines. Good service can help you build a strong
-professional reputation.
-</p>
+        <div class="step">
+            <h3>Step 6: Search for Clients</h3>
+            <p>
+                Explore suitable projects, understand client
+                requirements and write personalized proposals.
+                Explain how your service can solve their problem.
+            </p>
+        </div>
 
-<h2>4. Popular Freelancing Platforms</h2>
+        <div class="step">
+            <h3>Step 7: Deliver Professional Work</h3>
+            <p>
+                Communicate clearly, follow the agreed project
+                requirements and respect deadlines.
+                Good service helps build trust.
+            </p>
+        </div>
 
-<p>
-These platforms can help freelancers discover projects
-and connect with potential clients.
-</p>
+        <h2>4. Popular Freelancing Platforms</h2>
 
-<ul>
-<li><a href="https://www.upwork.com/" target="_blank" rel="noopener">Upwork</a> – Freelance projects across many industries.</li>
-<li><a href="https://www.fiverr.com/" target="_blank" rel="noopener">Fiverr</a> – Offer services through freelance listings.</li>
-<li><a href="https://www.freelancer.com/" target="_blank" rel="noopener">Freelancer</a> – Find projects and submit bids.</li>
-<li><a href="https://www.peopleperhour.com/" target="_blank" rel="noopener">PeoplePerHour</a> – Connect with clients seeking services.</li>
-<li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> – Network with businesses and professionals.</li>
-</ul>
+        <p>
+            Freelance platforms connect independent professionals
+            with clients who need different services.
+        </p>
 
-<div class="highlight">
-<strong>Important:</strong> Always check a platform's current
-age requirements, country availability, payment rules and
-fees before creating an account. Never pay someone who
-promises guaranteed freelance work.
-</div>
+        <ul>
+            <li>
+                <a href="https://www.upwork.com/" target="_blank" rel="noopener">
+                    Upwork
+                </a>
+                - Find projects across different professional fields.
+            </li>
 
-<h2>5. How Much Can Beginners Earn?</h2>
+            <li>
+                <a href="https://www.fiverr.com/" target="_blank" rel="noopener">
+                    Fiverr
+                </a>
+                - Offer services through freelance listings.
+            </li>
 
-<p>
-Freelance income varies depending on your skills, experience,
-service quality, competition and ability to find clients.
-</p>
+            <li>
+                <a href="https://www.freelancer.com/" target="_blank" rel="noopener">
+                    Freelancer
+                </a>
+                - Discover projects and submit proposals.
+            </li>
 
-<p>
-Some beginners may take weeks or months to find their first
-paying project. Others may take longer. There is no guaranteed
-income or fixed amount that every freelancer earns.
-</p>
+            <li>
+                <a href="https://www.peopleperhour.com/" target="_blank" rel="noopener">
+                    PeoplePerHour
+                </a>
+                - Connect with clients looking for professional services.
+            </li>
 
-<p>
-Focus first on learning, building a portfolio and delivering
-good work instead of expecting quick money.
-</p>
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                    LinkedIn
+                </a>
+                - Build professional connections and discover opportunities.
+            </li>
+        </ul>
 
-<h2>6. Common Freelancing Mistakes to Avoid</h2>
+        <div class="highlight">
+            <strong>Important:</strong>
+            Check each platform's current age requirements,
+            country availability, payment methods and fees
+            before creating an account.
+            Never pay someone who promises guaranteed freelance jobs.
+        </div>
 
-<ul>
-<li>Trying to learn too many skills at the same time.</li>
-<li>Copying another freelancer's portfolio.</li>
-<li>Sending generic proposals to every client.</li>
-<li>Accepting projects without understanding the requirements.</li>
-<li>Ignoring communication and deadlines.</li>
-<li>Paying suspicious people who promise guaranteed jobs.</li>
-<li>Giving up before developing enough experience.</li>
-</ul>
+        <h2>5. How Do Freelancers Earn Money</h2>
 
-<h2>7. Your First 30-Day Freelancing Plan</h2>
+        <p>
+            Freelancers earn money by providing services
+            according to agreed project prices, hourly rates
+            or other payment arrangements.
+        </p>
 
-<ol>
-<li><strong>Days 1–7:</strong> Choose one skill and learn its fundamentals.</li>
-<li><strong>Days 8–14:</strong> Practise and complete small sample projects.</li>
-<li><strong>Days 15–21:</strong> Build a simple portfolio with your best work.</li>
-<li><strong>Days 22–30:</strong> Research suitable platforms, prepare your profile and practise writing proposals.</li>
-</ol>
+        <p>
+            Earnings depend on the freelancer's skills,
+            experience, quality of work, client demand and
+            ability to find suitable projects.
+        </p>
 
-<h2>8. Final Thoughts</h2>
+        <p>
+            There is no guaranteed income. Beginners should
+            focus on improving their skills and building
+            a strong portfolio before expecting regular work.
+        </p>
 
-<p>
-Freelancing can create opportunities to work with clients
-from different countries and industries. However, success
-requires consistent learning, patience and professional effort.
-</p>
+        <h2>6. Common Freelancing Mistakes</h2>
 
-<p>
-Start with one skill, practise regularly and gradually build
-your experience. Every professional freelancer started
-somewhere.
-</p>
+        <ul>
+            <li>Learning too many skills at the same time.</li>
+            <li>Copying other people's portfolio projects.</li>
+            <li>Sending identical proposals to every client.</li>
+            <li>Accepting work without understanding its requirements.</li>
+            <li>Ignoring communication and deadlines.</li>
+            <li>Paying suspicious people for guaranteed jobs.</li>
+            <li>Giving up before gaining enough practical experience.</li>
+        </ul>
 
-<div class="highlight">
-<strong>SkillLaunch Hub Tip:</strong> Your first goal should
-become learning a valuable skill and creating three strong
-portfolio projects. Build your foundation before focusing
-on earning money.
-</div>
+        <h2>7. Your First 30-Day Learning Plan</h2>
 
-</article>
-</div>
+        <ol>
+            <li>
+                <strong>Days 1 to 7:</strong>
+                Choose one skill and learn its fundamentals.
+            </li>
+
+            <li>
+                <strong>Days 8 to 14:</strong>
+                Practise and complete small sample projects.
+            </li>
+
+            <li>
+                <strong>Days 15 to 21:</strong>
+                Create a portfolio with your best work.
+            </li>
+
+            <li>
+                <strong>Days 22 to 30:</strong>
+                Research platforms, prepare your profile
+                and practise writing client proposals.
+            </li>
+        </ol>
+
+        <h2>8. Final Thoughts</h2>
+
+        <p>
+            Freelancing can provide opportunities to develop
+            professional skills and work with clients around
+            the world. However, success takes time and effort.
+        </p>
+
+        <p>
+            Start with one skill, practise consistently,
+            build original projects and continue improving.
+            A strong foundation is more valuable than
+            looking for shortcuts.
+        </p>
+
+        <div class="highlight">
+            <strong>SkillLaunch Hub Advice:</strong>
+            Your first milestone should be learning one skill
+            and completing three quality portfolio projects.
+            Focus on building real abilities before chasing income.
+        </div>
+
+    </article>
+</main>
 
 <footer>
-    <p>© 2026 SkillLaunch Hub. All Rights Reserved.</p>
+    <p>Copyright &copy; 2026 SkillLaunch Hub. All Rights Reserved.</p>
     <p>Learn Skills. Build Your Future.</p>
-    <a href="index.html">Back to Homepage</a>
+    <p><a href="index.html">Return to Homepage</a></p>
 </footer>
 
 </body>
